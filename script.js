@@ -26,3 +26,24 @@ lightbox.onclick = function(e) {
         lightbox.style.display = "none";
     };
 };
+
+const particles = document.querySelector(".particles");
+for (let i = 0; i < 17; i++) {
+    const dot = document.createElement("span");
+    dot.classList.add("particle");
+    dot.style.left = Math.random() * 100 + "%";
+    const size = Math.random() * 10 + 5;
+    dot.style.width = size + "px";
+    dot.style.height = size + "px";
+    dot.style.animationDuration = (Math.random() * 15 + 15) + "s";
+    particles.appendChild(dot);
+}
+
+const mainNav = document.querySelector(".main-nav");
+window.addEventListener("scroll", function(){
+    if (window.scrollY > 50) {
+        mainNav.classList.add("scrolled");
+    } else {
+        mainNav.classList.remove("scrolled");
+    }
+});
