@@ -344,3 +344,25 @@ footer {
         height: auto;
     }
 }
+@media (max-width: 768) {
+    .top-bar {
+        height: 55px;
+        padding: 0 20px;
+        font-size: 17px;
+    }
+    .main-nav {
+        height: 75px;
+        padding: 0 15px;
+    }
+    .brand {
+        gap: 8px;
+        font-size: 17px;
+    }
+    .brand img {
+        width: 45px;
+        height: 45px;
+    }
+    .nav-right {
+        gap: 12px;
+    }
+}
