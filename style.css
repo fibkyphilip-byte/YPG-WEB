@@ -373,31 +373,61 @@ footer {
  }
 
 /*PHONE RESPONSIVE*/
-@media (max-width: 600px){
-    img {
-        max-width: 270px;
-        height: auto;
-    }
+* {
+    box-sizing: border-box;
 }
-@media (max-width: 768) {
-    .top-bar {
-        height: 55px;
-        padding: 0 20px;
-        font-size: 17px;
-    }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
     .main-nav {
-        height: 75px;
         padding: 0 15px;
     }
     .brand {
-        gap: 8px;
         font-size: 17px;
     }
     .brand img {
         width: 45px;
         height: 45px;
     }
-    .nav-right {
-        gap: 12px;
+    .hero {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .events {
+        padding: 40px 15px;
+    }
+    #verse {
+        margin: 50px 15px;
+    }
+    .announcement-box {
+        margin: 15px;
+    }
+    .guilder {
+        padding: 50px 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+    .brand {
+        font-size: 15px;
+    }
+    .events {
+        padding: 30px 10px;
     }
 }
