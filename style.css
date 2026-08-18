@@ -337,6 +337,41 @@ footer {
     font-family: verdana;
 }
 
+.guilder {
+    padding-top: 100px;
+    font-family: verdana;
+}
+.guilder p {
+    font-style: italic;
+}
+ .guilder .quote {
+    border-left: 4px solid rgb(0, 0, 0);
+    color: black;
+    display: block;
+    margin: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+ }
+ .guilder h3 {
+    color: #1507e2;
+ }
+ 
+ .story-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #006b3f;
+    padding: 12px 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease;
+ }
+ .story-btn:hover {
+    background-color: #004d2c;
+    transform: translateY(-2px);
+ }
+
 /*PHONE RESPONSIVE*/
 @media (max-width: 600px){
     img {
