@@ -70,9 +70,10 @@
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #202123;
+    background: #191b1d;
     padding-top: 20px;
     transition: 0.3s;
+    z-index: 9999;
 }
 
 #sidebar.show {
@@ -211,11 +212,13 @@ img {
 .logo h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.0rem;
+    text-align: center;
 }
 
 .logo h3 {
     font-size: 0.9rem;
     color: rgb(29, 4, 255);
+    text-align: center;
 }
 
 .logo p {
@@ -264,6 +267,9 @@ footer {
     margin-bottom: 20px;
     box-shadow: 0 3px 10px;
     font-family: Arial;
+}
+.events h3 {
+    color: white;
 }
 /*.events-card img {
     max-width: 100;
@@ -371,6 +377,105 @@ footer {
     background-color: #004d2c;
     transform: translateY(-2px);
  }
+
+ /*MEMBER HTML*/
+ #topic {
+    background-color: #9c004e;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Verdana;
+    margin-top: 50px;
+ }
+ #topic h1, p {
+    margin: 5px;
+ }
+.member-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 20px 60px;
+}
+.member-page h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(150, 2, 27);
+}
+.member-month {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 0;
+    color: rgb(150, 2, 27);
+    text-decoration: underline;
+}
+.featured-member {
+    text-align: center;
+}
+.featured-member > img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+.member-page h4 {
+    margin-top: 30px;
+    font-family: Verdana;
+    color: rgb(150, 2, 27);
+}
+.member-page p {
+    font-family:Verdana;
+}
+.member-page .quote {
+    border-left: 4px solid rgb(0, 0, 0);
+    color: black;
+    display: block;
+    margin: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+ }
+.member-archive {
+    margin-top: 70px;
+}
+.member-archive h2, h3 {
+    text-align: center;
+    font-family: Verdana;
+    color: rgb(150, 2, 27);
+    margin: 0;
+}
+.member-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.member-card p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.member-card h4 {
+    margin: 5px 0;
+}
+.member-card a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: verdana;
+    background-color: #004d00;
+    color: white;
+    border-radius: 5px;
+}
+
 
 /*PHONE RESPONSIVE*/
 * {
