@@ -47,3 +47,11 @@ window.addEventListener("scroll", function(){
         mainNav.classList.remove("scrolled");
     }
 });
+
+const dropdownArrow = document.querySelector(".dropdown-arrow");
+const navDropdown = document.querySelector(".nav-dropdown");
+if (dropdownArrow) {
+    dropdownArrow.addEventListener("click", function(){
+        navDropdown.classList.toggle("active");
+    });
+}

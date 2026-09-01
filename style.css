@@ -91,6 +91,55 @@
     background: #343541;
 }
 
+/*ABOUT DROPDOWN*/
+.nav-dropdown {
+    position: relative;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-item a {
+    display: block;
+    flex: 1;
+}
+.dropdown-arrow {
+    display: inline-flex ;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: auto;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+/*SHOW SUBMENU*/
+.nav-dropdown.active .submenu {
+    display: block;
+}
+/*ROTATE ARROW*/
+.nav-dropdown.active .dropdown-arrow {
+    transform: rotate(90deg);
+}
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
 /* HERO / WELCOME SECTION*/
 .hero {
     background: linear-gradient(rgba(0,51,102,0.85),rgba(0,51,102,0.85));
@@ -98,7 +147,7 @@
     padding: 80px 20px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("leaders pics/Philip.png");
+    background-image: url("leaders pics/Background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -475,6 +524,9 @@ footer {
     color: white;
     border-radius: 5px;
 }
+.faith-journey {
+    margin: 0;
+}
 
 
 /*PHONE RESPONSIVE*/
@@ -535,4 +587,8 @@ img {
     .events {
         padding: 30px 10px;
     }
+}
+
+#sidebar .nav-item {
+    flex-direction: row !important;
 }
