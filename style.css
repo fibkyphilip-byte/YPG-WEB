@@ -529,6 +529,137 @@ footer {
 }
 
 
+/* ABOUT PAGE */
+/*ABOUT HERO*/
+
+.about-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #172a8a;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin: 1opx 0;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.direction-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+}
+.direction-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+.direction-grid .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.direction-card h3 {
+    color: blue;
+    font-size: 17px;
+    line-height: 1.2;
+}
+.direction-card p {
+    color: black;
+    line-height: 1.3;
+}
+
+/*HISTORY*/
+.history {
+    margin-bottom: 70px;
+}
+.history p {
+    color: black;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+/*LEADERSHIP*/
+.leaders-section {
+    margin-top: 50px;
+}
+.leaders-grid {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+.leaders-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.leader-info h2 {
+    margin: 0 0 8px;
+    color: #172a8a;
+    font-size: 22px;
+}
+.leader-info p {
+    margin: 0;
+    color: black;
+    font-size: 16px;
+}
+
+/*ABOUT MOBILE*/
+@media (max-width: 768px) {
+    .about-container {
+        width: 92%;
+        padding: 50px 0;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+    .direction-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .direction-card {
+        padding: 25px;
+    }
+    .leaders-grid {
+        gap: 20px;
+        padding: 15px;
+    }
+    .leaders-grid img {
+        width: 90px;
+        height: 90px;
+    }
+    .leader-info h2 {
+        font-size: 18px;
+    }
+    .leader-info p {
+        font-size: 14px;
+    }
+}
+
+
 /*PHONE RESPONSIVE*/
 * {
     box-sizing: border-box;
