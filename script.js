@@ -32,7 +32,8 @@ if (lightbox) {
 }
 
 const particles = document.querySelector(".particles");
-for (let i = 0; i < 17; i++) {
+if (particles) {
+    for (let i = 0; i < 17; i++) {
     const dot = document.createElement("span");
     dot.classList.add("particle");
     dot.style.left = Math.random() * 100 + "%";
@@ -41,6 +42,7 @@ for (let i = 0; i < 17; i++) {
     dot.style.height = size + "px";
     dot.style.animationDuration = (Math.random() * 15 + 15) + "s";
     particles.appendChild(dot);
+    }
 }
 
 const mainNav = document.querySelector(".main-nav");
