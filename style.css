@@ -70,7 +70,7 @@
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #191b1d;
+    background: #f0f1f3;
     padding-top: 20px;
     transition: 0.3s;
     z-index: 9999;
@@ -82,13 +82,15 @@
 
 #sidebar a {
     display: block;
-    color: white;
+    color: rgb(13, 1, 32);
     text-decoration: none;
     padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 #sidebar a:hover {
-    background: #343541;
+    background: #c4c5d3;
 }
 
 /*ABOUT DROPDOWN*/
@@ -111,7 +113,7 @@
     justify-content: center;
     background: none;
     width: auto;
-    color: white;
+    color: rgb(13, 1, 32);
     border: none;
     font-size: 20px;
     cursor: pointer;
