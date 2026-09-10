@@ -17,15 +17,19 @@ images.forEach(image => {
     };
 });
 
-close.onclick = function() {
+if (close) {
+    close.onclick = function() {
     lightbox.style.display = "none";
-};
+    };
+}
 
-lightbox.onclick = function(e) {
+if (lightbox) {
+    lightbox.onclick = function(e) {
     if (e.target === lightbox) {
         lightbox.style.display = "none";
+        };
     };
-};
+}
 
 const particles = document.querySelector(".particles");
 for (let i = 0; i < 17; i++) {
