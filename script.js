@@ -65,7 +65,7 @@ if (dropdownArrow) {
 //REVEAL ANIMATION
 document.addEventListener("DOMContentLoaded", () => {
     const revealElements = document.querySelectorAll(
-        "section:not(.hero), .event-header, .events, .theme, .theme-box, .member-card, member-content, footer"
+        "section:not(.hero), .event-header, .events, .theme, .theme-box, .member-card, .member-content"
     );
     revealElements.forEach(element => {
         element.classList.add("scroll-reveal");
