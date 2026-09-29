@@ -61,3 +61,27 @@ if (dropdownArrow) {
         navDropdown.classList.toggle("active");
     });
 }
+
+//REVEAL ANIMATION
+document.addEventListener("DOMContentLoaded", () => {
+    const revealElements = document.querySelectorAll(
+        "section:not(.hero), .event-header, .events, .theme, .theme-box, .member-card, member-content, footer"
+    );
+    revealElements.forEach(element => {
+        element.classList.add("scroll-reveal");
+    });
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                //ANIMATE ONLY ONCE 
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.10, rootMargin: "0px 0px -80px 0px"
+    });
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+});

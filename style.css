@@ -700,6 +700,41 @@ footer {
     font-size: 16px;
 }
 
+/*ENTRANCE ANIMATION*/
+.hero h1 {
+    animation: slideUp 0.8s ease-out both;
+}
+.hero p {
+    animation: slideUp 0.8s ease-out 0.15s both;
+}
+.theme-box:first-child {
+    animation: slideUp 0.8s ease-out 0.35s both;
+}
+.theme-box:last-child {
+    animation: slideUp 0.8s ease-out 0.5s both;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*SCROLL REVEAL*/
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*ABOUT MOBILE*/
 @media (max-width: 768px) {
     .about-container {
