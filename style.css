@@ -623,6 +623,7 @@ footer {
 /*HISTORY*/
 .history {
     margin-bottom: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .history p {
     color: black;
@@ -773,6 +774,27 @@ footer {
     .theme-box {
         padding: 3px 5px;
     }
+}
+
+/*GALLERY CSS*/
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gallery h1 {
+    color: #020214;
+    font-weight: bold;
+}
+.gallery-icon {
+    font-size: 55px;
+    text-align: center;
+}
+.gallery-card {
+    border: 2px dashed black;
+    text-align: center;
+    padding-bottom: 50px;
+    border-radius: 16px;
+    margin: 30px;
+    background: radial-gradient(#888 1.5px, transparent 1.6px) 0 0 / 40px 40px;
 }
 
 
