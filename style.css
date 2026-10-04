@@ -785,8 +785,9 @@ main {
     font-weight: bold;
 }
 .gallery-icon {
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
+    padding-top: 20px;
 }
 .gallery-card {
     border: 2px dashed black;
@@ -795,6 +796,23 @@ main {
     border-radius: 16px;
     margin: 30px;
     background: radial-gradient(#888 1.5px, transparent 1.6px) 0 0 / 40px 40px;
+}
+
+
+/*CONTACT CSS*/
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px;
+}
+.call {
+    padding: 28px;
+    border: 2px solid black;
+    border-radius: 35px;
+    justify-content: center;
+    font-size: 30px;
+    background: rgba(225, 225, 225, 0.14);
 }
 
 
