@@ -85,3 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(element);
     });
 });
+
+document.querySelectorAll('.event-image').forEach(image=> {
+    image.addEventListener('click', () => {
+        document.querySelectorAll('event-image.active').forEach(img => img.classList.remove('active'));
+        image.classList.add('active');
+    });
+});

@@ -237,6 +237,7 @@
     margin-bottom: 15px;
     position: relative;
     z-index: 3;
+    font-weight: bold;
 }
 
 .hero p {
@@ -262,6 +263,7 @@ img {
     margin-bottom: 50px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.5);
     cursor: pointer;
+    margin-bottom: 20px;
 }
 #lightbox {
     display: none;
@@ -292,12 +294,15 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.0rem;
     text-align: center;
+    margin: 0;
 }
 
 .logo h3 {
     font-size: 0.9rem;
     color: rgb(29, 4, 255);
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .logo p {
@@ -840,6 +845,87 @@ main {
     background: rgba(225, 225, 225, 0.14);
     background-color: blue;
     color: white;
+}
+
+/*EVENTS CSS*/
+
+.upcoming-events, .past-events {
+    text-align: center;
+    background: linear-gradient(90deg, #1D5BDB 0%, #57a1df 60%, #18B3C8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.upcoming-events::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 2px auto 40px;
+    background: linear-gradient(90deg, #1D5BDB 0%, #57a1df 60%, #18B3C8 100%);
+    border-radius: 10px;
+}
+.past-events::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 2px auto 40px;
+    background: linear-gradient(90deg, #1D5BDB 0%, #57a1df 60%, #18B3C8 100%);
+    border-radius: 10px;
+}
+
+.event-card {
+    width: 100%;
+    max-width: 350px;
+    background: #f0ecec;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.event-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+}
+.event-image:active {
+    filter: grayscale(0%);
+}
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.badge {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #555;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 9px;
+    font-size: 12px;
+}
+.event-content {
+    padding: 10px;
+}
+.event-content p {
+    color: #4d535f;
+    font-size: 14px;
+    margin: 0;
+}
+.event-content h3 {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
 }
 
 
