@@ -343,24 +343,23 @@ footer {
 }
 
 .events-card {
-    display: flex;
+    display: block;
     align-items: center;
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     border-radius: 10px;
-    padding: 20px;
+    padding: 0;
     margin-bottom: 20px;
-    box-shadow: 0 3px 10px;
     font-family: Arial;
 }
 .events h3 {
     color: white;
 }
-/*.events-card img {
+.events-card img {
     max-width: 100;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
-}*/
+    justify-content: center;
+}
 
 .event-date {
     width: 80px;
@@ -385,10 +384,14 @@ footer {
 .event-details h3 {
     margin-bottom: 8px;
     font-family: Arial;
+    text-align: left;
+    padding-left: 50px;
 }
 .event-details p {
     margin: 5px 0;
     font-family: Arial;
+    padding-left: 50px;
+    font-style: italic;
 }
 .btn {
     display: block;
@@ -404,6 +407,8 @@ footer {
 }
 .btn:hover {
     background: #004d00;
+    transform: translateY(-2px);
+    font-weight: bold;
 }
 
 #verse {
@@ -881,6 +886,8 @@ main {
     background: #f0ecec;
     border-radius: 20px;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .event-image {
@@ -889,8 +896,6 @@ main {
     height: 250px;
     border-radius: 20px 20px 0 0;
     overflow: hidden;
-    align-content: center;
-    justify-content: center;
 }
 
 .past-event-image {
@@ -936,6 +941,31 @@ main {
     font-size: 20px;
     font-weight: bold;
     text-align: left;
+}
+
+
+/*PAST EVENTS PAGE CSS*/
+
+.programe-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+.programe li {
+    margin-bottom: 12px;
+}
+.programe h3 {
+    text-align: left;
+}
+.read {
+    border-left: 4px solid rgb(0, 0, 0);
+    color: black;
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
 }
 
 
