@@ -75,6 +75,9 @@
     transition: 0.3s;
     z-index: 9999;
 }
+#sidebar ul {
+    list-style: none;
+}
 
 #sidebar.show {
     left: 0;
@@ -320,6 +323,9 @@ footer {
     padding: 20px;
     font-size: 0.9rem;
     margin-top: 60px;
+}
+hr {
+    margin-bottom: 40px;
 }
 
 /*EVENTS SECTION*/
@@ -946,16 +952,16 @@ main {
 
 /*PAST EVENTS PAGE CSS*/
 
-.programe-card {
+.program-card {
     background: white;
     padding: 35px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
 }
-.programe li {
+.program li {
     margin-bottom: 12px;
 }
-.programe h3 {
+.program h3 {
     text-align: left;
 }
 .read {
