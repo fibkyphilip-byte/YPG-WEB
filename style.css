@@ -257,7 +257,7 @@ img {
    /* width: 300px;
     height: 300px;*/
     width: 450px;
-    height: auto;
+    max-height: 550px;
     object-fit: cover;
     border-radius: 10px;
     display: block;
@@ -509,12 +509,12 @@ hr {
     text-align: center;
 }
 .featured-member > img {
-    width: 220px;
-    height: 220px;
+    width: 420px;
+    height: 420px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20px;
     display: block;
-    margin: 0 auto 20px;
+    margin: 50px auto 20px;
 }
 .member-page h4 {
     margin-top: 30px;
@@ -705,6 +705,7 @@ hr {
     object-fit: cover;
     object-position: center top;
     border-radius: 12px;
+    margin: 20px;
 }
 .leader-info h2 {
     margin: 0 0 8px;
@@ -1037,4 +1038,10 @@ img {
 
 #sidebar .nav-item {
     flex-direction: row !important;
+}
+
+#sidebar ul li a:active {
+    background-color: #004d00;
+    color: white;
+    border-radius: 5px;
 }

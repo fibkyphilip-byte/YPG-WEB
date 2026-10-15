@@ -85,3 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(element);
     });
 });
+
+// NAV HIGHLIGHT
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelector("#sidebar a");
+    navLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href");
+        if (linkPage && linkPage.split("/").pop() === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
