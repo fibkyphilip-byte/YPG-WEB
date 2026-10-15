@@ -506,7 +506,7 @@ hr {
     text-decoration: underline;
 }
 .featured-member {
-    text-align: center;
+    text-align: left;
 }
 .featured-member > img {
     width: 420px;
@@ -1040,8 +1040,7 @@ img {
     flex-direction: row !important;
 }
 
-#sidebar ul li a:active {
-    background-color: #004d00;
-    color: white;
+#sidebar a.active {
+    background-color: #dce4dc;
     border-radius: 5px;
 }

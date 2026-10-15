@@ -5,7 +5,7 @@ menuBtn.addEventListener("click", function(){
     sidebar.classList.toggle("show");
 });
 
-const images = document.querySelectorAll(".leaders");
+const images = document.querySelectorAll(".show");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const close = document.getElementById("close");
@@ -89,11 +89,12 @@ document.addEventListener("DOMContentLoaded", () => {
 // NAV HIGHLIGHT
 document.addEventListener("DOMContentLoaded", function () {
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
-    const navLinks = document.querySelector("#sidebar a");
+    const navLinks = document.querySelectorAll("#sidebar a");
     navLinks.forEach(function (link) {
         const linkPage = link.getAttribute("href");
         if (linkPage && linkPage.split("/").pop() === currentPage) {
             link.classList.add("active");
+            link.setAttribute("aria-current", "page");
         }
     });
 });
