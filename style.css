@@ -871,11 +871,25 @@ main {
 .message-section input, .message-section textarea {
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
+    margin-top: 8px;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 6px;
-    font: inherit;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+    font-family: inherit;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.message-section input:focus, .message-section textarea:focus {
+    outline: none;
+    border-color: #172a8a;
+    box-shadow: 0 0 0 3px rgba(23, 42, 138, 0.1);
+}
+.message-section textarea {
+    resize: vertical;
+    margin-top: 20px;
 }
 .message-section button {
     width: 100%;
@@ -883,8 +897,13 @@ main {
     background: #172a8a;
     color: white;
     border: none;
+    margin-top: 10px;
     border-radius: 6px;
     cursor: pointer;
+}
+#contact-form p {
+    text-align: left;
+    margin: 10px;
 }
 
 /*EVENTS CSS*/
