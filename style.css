@@ -698,6 +698,8 @@ hr {
     margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+    min-width: 0;
+    flex-wrap: wrap;
 }
 .leaders-grid img {
     width: 150px;
@@ -711,11 +713,20 @@ hr {
     margin: 0 0 8px;
     color: #172a8a;
     font-size: 22px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
 }
 .leader-info p {
     margin: 0;
     color: black;
     font-size: 16px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+.leader-info {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 /*ENTRANCE ANIMATION*/
