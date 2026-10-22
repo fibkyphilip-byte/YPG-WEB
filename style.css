@@ -690,7 +690,7 @@ hr {
     margin-top: 50px;
 }
 .leaders-grid {
-    display: flex;
+    display: block;
     align-items: center;
     gap: 30px;
     background: white;
