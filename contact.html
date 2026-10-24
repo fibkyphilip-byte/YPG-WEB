@@ -101,13 +101,15 @@
         <h2>Send Us a Message</h2>
         <p>Fill in the form below and we'll respond promptly.</p>
 
-        <form id="contact-form">
+        <form action="https://formspree.io/f/xbgglrke" 
+        method="POST" 
+        id="contact-form">
             <p>Full Name</p>
             <input type="text" name="name" placeholder="Your Full Name" required>
             <p>Email Address</p>
             <input type="email" name="email" placeholder="you@example.com" required>
             <p>Phone Number (Optional)</p>
-            <input type="number" name="phone-number" placeholder="+233 XX XXX XXXX">
+            <input type="tel" name="phone-number" placeholder="+233 XX XXX XXXX">
             <p>Subject</p>
             <input type="text" name="subject" placeholder="What is this about" required>
             <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
