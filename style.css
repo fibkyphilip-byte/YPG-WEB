@@ -1035,17 +1035,17 @@ main {
 
 .success-popup {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 5px;
+    right: 5px;
     left: auto;
     transform: none;
     background: #198754;
     color: white !important;
     padding: 14px 20px;
     border-radius: 8px;
-    z-index: 999999;
+    z-index: 2147483647;
     width: max-content;
-    max-width: calc(100% - 40px);
+    max-width: calc(100vw - 20px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
