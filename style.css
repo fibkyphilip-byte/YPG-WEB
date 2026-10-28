@@ -1035,17 +1035,18 @@ main {
 
 .success-popup {
     position: fixed;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 20px;
+    right: 20px;
+    left: auto;
+    transform: none;
     background: #198754;
     color: white !important;
     padding: 14px 20px;
     border-radius: 8px;
-    z-index: 9999;
+    z-index: 999999;
     width: max-content;
-    max-width: 90%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: calc(100% - 40px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /*PHONE RESPONSIVE*/
