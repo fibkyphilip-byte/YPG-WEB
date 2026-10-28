@@ -1033,6 +1033,20 @@ main {
     padding-left: 10px;
 }
 
+.success-popup {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #198754;
+    color: white !important;
+    padding: 14px 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    width: max-content;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 /*PHONE RESPONSIVE*/
 * {

@@ -121,7 +121,14 @@ document.getElementById("contact-form")?.addEventListener("submit",async functio
         });
 
         if (response.ok) {
-            status.textContent = "Your message has been sent successfully!",
+            status.textContent = "Your message has been sent successfully!";
+            status.className = "success-popup";
+            status.style.display = "block";
+
+            setTimeout(() => {
+                status.style.display = "none";
+            }, 4000);
+            
             status.style.color = "green";
             form.reset();
         } else{
