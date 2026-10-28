@@ -100,24 +100,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // FORM SUBMISSION
-Document.getElementById("contact-form")?.addEventListener("submit",async function(e){
+document.getElementById("contact-form")?.addEventListener("submit",async function(e){
     e.preventDefault();
     const form = this;
     const status = document.getElementById("form-status");
     const button = form.querySelector('button[type="submit"]');
 
+    if (!status || !button) return;
+    
     button.disabled = true;
-    button.textContent = "sending...";
+    button.textContent = "Sending...";
     status.style.display = "block";
     status.textContent = "Sending your message...";
 
     try{
-        const response = await fetch(form.action,{
+        const response = await fetch(form.action, {
             method:"POST",
             body: new FormData(form),
-            headers:{"Accept": "application/json"}
+            headers:{"Accept": "application/json" }
         });
-        if (response.ok){
+
+        if (response.ok) {
             status.textContent = "Your message has been sent successfully!",
             status.style.color = "green";
             form.reset();
@@ -125,11 +128,11 @@ Document.getElementById("contact-form")?.addEventListener("submit",async functio
             status.textContent = "Sorry, your message could not be sent. Please try again.";
             status.style.color = "red";
         }
-    } catch (error){
+    } catch (error) {
         status.textContent = "Connection error. Please check your internet and try again.";
         status.style.color = "red";
     } finally {
         button.disabled = false;
-        button.textContent = "Send message";
+        button.textContent = "Send Message";
     }
 });
