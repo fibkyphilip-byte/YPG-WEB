@@ -431,8 +431,11 @@ hr {
 .announcement-box {
     border: 2px solid black;
     border-radius: 5px;
-    text-align: center;
-    font-family: arial;
+    text-align: left;
+    font-family: verdana;
+}
+.announcement-box li {
+    margin-bottom: 12px;
 }
 #announcement {
     font-family: verdana;
