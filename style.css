@@ -433,6 +433,7 @@ hr {
     border-radius: 5px;
     text-align: left;
     font-family: verdana;
+    padding: 10px;
 }
 .announcement-box li {
     margin-bottom: 12px;
